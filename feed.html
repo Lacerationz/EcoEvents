@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>EcoEvents</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="css/home.css">	
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+		<link rel="stylesheet" href="css/plugins.css">
+		<link rel="stylesheet" href="css/feed.css">	
+		<link rel="icon" type="imagem/png" href="images/folha.png" />
+		<link rel="stylesheet" href="css/portfolio.css">
+
+		<script src="js/evento.js"></script>
+	</head>
+	<body>
+
+		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="feed.html">Feed</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="contato.html">Contactos</a></li>
+				<li><a href="cadastro.html">Cadastro</a></li>
+				<li><a href="login.html">Login</a></li>
+				
+			</ul>
+		</nav>		
+
+		<div class="layout">
+			<header>
+				<div class="container">
+
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+						<a href="index.html">
+							<img src="images/folha.svg" alt="Logo Topo">
+						</a>
+					</div>
+
+					<div class="links">
+						<nav>
+							<ul>
+								<li><a href="index.html">Início</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="feed.html">Feed</a></li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="contato.html">Contactos</a></li>
+								<li><a href="cadastro.html">Cadastro</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+						</nav>
+					
+					</div>
+					<h1><strong>Feed</strong></h1>
+
+				</div>
+				
+			</header>
+			
+			<main>
+				<section class="eventos">
+					
+					<a href="#" id="button" class="button" onclick="abrircriaevento()"> Criar Evento</a>
+
+					<div id="modelo" class="modal-contents" style="display: none;">
+					
+
+						<div id="close" class="close" onclick="closeve()">+			
+					    </div>
+
+						<img class="imgform" src="images/folha.svg" alt="">
+						
+					
+							<form id="formu" action="">
+								<input type="text" placeholder="Nome do Evento">
+								<input type="email" placeholder="Descrição do Evento">
+								<input type="file" id="realfile"> 
+								<a href="#" class="buttonc" onclick="eventoCriado()">Criar</a>
+							</form>
+					
+						</div>
+					</div>
+
+				</section>
+
+				<section class="blog"> 
+					<br>
+						<div class="blog-post">
+							<div class="blog-post__img">
+								
+								<figure class="imghvr-hinge-right">
+								<img src="images/appen.jpg" alt="Thumb">
+								<figcaption>
+									<a href="https://apeen2021.cense.fct.unl.pt/">
+										<h3>APEEN 2021 Conferência</h3>
+										<p2>A 5ª Conferência Anual da Associação Portuguesa de Economia da Energia (APEEN) é totalmente dedicada a todas as vertentes da Transição Energética e Sustentabilidade.
+											Tem como objetivo reunir os principais cientistas acadêmicos, pesquisadores, inovadores e stakeholders empresariais e sociais, por meio de um contexto interdisciplinar para apresentar, compartilhar e discutir as mais recentes experiências, resultados de pesquisas, inovações e ideias em torno dos múltiplos temas sobre Transição de Energia e Sustentabilidade .</p2>
+									</a>
+									<div class="overlay"></div>
+								</figcaption>
+							</figure>
+							</div>
+							
+						<div class="blog-post__info">
+							<div class="blog-post__date">
+								<span>Quarta-Feira</span>
+								<span>20 de Janeiro de 2021</span>
+						</div>
+						<h1 class="blog-post__title">EcoEvents</h1>
+						<p class="blog-post__texto">
+							APEEN 2021 Conferência
+		
+						</p>
+						
+						<a href="https://apeen2021.cense.fct.unl.pt/" class="blog-post__cta">Ver Evento</a>
+					</div>
+				</div>
+
+					
+				</section>
+				<br>
+
+				<section class="blog"> 
+					<br>
+						<div class="blog-post">
+							<div class="blog-post__img">
+								<figure class="imghvr-flip-horiz">
+								<img src="images/congr_agua.png" alt="Thumb">
+								<figcaption>
+									<a href="https://www.aprh.pt/congressoagua2020/index.html">
+										<h3>15º Congresso da Água</h3>
+										<p2>O 15.º Congresso da Água é dedicado ao tema “Para uma política da água em Portugal - o contributo da APRH”. 
+											(O Congresso presencial ficou agendado para março 2021)</p2>
+									</a>
+									<div class="overlay"></div>
+								</figcaption>
+							</figure>
+					
+							</div>
+						<div class="blog-post__info">
+							<div class="blog-post__date">
+								<span>Segunda-Feira</span>
+								<span>22 de Março de 2021</span>
+						</div>
+						<h1 class="blog-post__title">EcoEvents</h1>
+						<p class="blog-post__texto">
+							15º Congresso da Água
+		
+						</p>
+						<a href="https://www.aprh.pt/congressoagua2020/index.html" class="blog-post__cta">Ver Evento</a>
+					</div>
+				</div>
+
+					
+				</section>
+			</main>
+			
+			<footer>
+				<div class="logo-rodape">
+					<a href="index.html">
+						<img src="images/folha.svg" alt="Logo  Rodapé">
+					</a>
+					<p1>Aviso: Todos os conteúdos usados neste website pertencem aos seu autores respetivos. Todo o conteúdo usado esta a ser utilizado com propósitos académicos e como tal não esta a ser usado de forma comercial. Caso exista algum problema com o uso de algum conteúdo que infrinja os direitos de autor por favor deve contactar com um dos responsáveis pela criação do website e pode-o fazer a partir da página de contactos.</p1>
+				</div>	
+			</footer>
+		</div>
+	</body>
+</html>

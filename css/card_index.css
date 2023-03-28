@@ -1,0 +1,95 @@
+
+.row2{
+    margin-left: 180px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+.col p{
+    font-size: 25px;
+    line-height: 25px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-style: italic;
+}
+h10{
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-style: italic;
+}
+button{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 14px 0;
+    background: rgb(0, 155, 8);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+.card{
+    margin: 50px;
+    margin-left: 350px;
+    width: 350px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;    
+    background-image: url("../images/card1.png");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    margin: 50px;
+    margin-left: 50px;
+    width: 350px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;    
+    background-image: url("../images/card2.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card1:hover{
+    transform: translateY(-10px);
+}
+.card h5{
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 50px;
+}
+
+.card1 h5{
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 50px;
+}
+
+.card p{
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 15px #000;
+    font-size: 20px;
+}
+
+.card1 p{
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 15px #000;
+    font-size: 20px;
+}
+

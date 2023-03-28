@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EcoEvents</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="icon" type="imagem/png" href="images/folha.png" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/folha.svg" alt="Logo Topo Tag">
+				</a>
+			</div>
+			<div class="links">
+				<nav>
+					<ul>
+						<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="feed.html">Feed</a></li>
+							<li><a href="galeria.html">Galeria</a></li>
+							<li><a href="contato.html">Contactos</a></li>
+							<li><a href="cadastro.html">Cadastro</a></li>
+							<li><a href="login.html">Login</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+			<h1><strong>Quem</strong> nós <strong>Somos</strong></h1>
+			<p>Sobre a EcoEvents.</p>
+		</div>
+	</header>
+	<main>
+		<section class="sobre">
+			<div class="container">
+				<div class="textos">
+					<br></br>
+					<p2>A <strong>EcoEvents</strong> é uma plataforma desenhada para facilitar a criação de eventos no ambito da ecologia.
+					Com a EcoEvents, criar eventos como dias dedicados ao apanhar 
+					o lixo das praias ou demonstrações para sensibilazar o publico geral torna-se mais
+					simples com uso desta plataforma. Para criar um evento, basta só criar um post.</p2>
+					
+				</div>
+				
+				<br>
+				
+			</div>
+		</section>
+	
+		<br>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="images/sobre1.jpg" style="width:100%">
+  <img class="mySlides" src="images/sobre2.png" style="width:100%">
+  <img class="mySlides" src="images/sobre3.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+		  
+		  <script>
+		  var slideIndex = 1;
+		  showDivs(slideIndex);
+		  
+		  function plusDivs(n) {
+			showDivs(slideIndex += n);
+		  }
+		  
+		  function currentDiv(n) {
+			showDivs(slideIndex = n);
+		  }
+		  
+		  function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+			  x[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" w3-white", "");
+			}
+			x[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " w3-white";
+		  }
+		  </script>
+
+		<a href="feed.html" class="botao medio"> Acessar Eventos</a>
+	</main>
+	
+	<footer>
+		<div class="logo-rodape">
+			<a href="index.html">
+				<img src="images/folha.svg" alt="Logo  Rodapé">
+			</a>
+			<p1>Aviso: Todos os conteúdos usados neste website pertencem aos seu autores respetivos. Todo o conteúdo usado esta a ser utilizado com propósitos académicos e como tal não esta a ser usado de forma comercial. Caso exista algum problema com o uso de algum conteúdo que infrinja os direitos de autor por favor deve contactar com um dos responsáveis pela criação do website e pode-o fazer a partir da página de contactos.</p1>
+		</div>	
+	</footer>
+</body>
+</html>
